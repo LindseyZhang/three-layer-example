@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+version: '2'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: three-layer-mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=three_layer_demo
+    ports:
+    - "3306:3306"
