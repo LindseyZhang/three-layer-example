@@ -20,8 +20,12 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
 
-    @Autowired
     private ProductService productService;
+
+    @Autowired
+    public ProductController(ProductService productService) {
+        this.productService = productService;
+    }
 
     @GetMapping
     @ApiOperation(value = "根据产品名称查询产品列表", response = Product.class, responseContainer = "list")
