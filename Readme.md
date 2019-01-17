@@ -16,9 +16,14 @@
  swagger ui
  
  editor config
-  
+
+### 要求
+ 电脑需预装 docker。
+ 
+ 由于使用了 editor config, 如使用 IDE 为 eclipse，需下载 editor config 插件。Intellj 无需自己下载插件。
+ [点此](https://editorconfig.org/)查看所有 IDE 对 editor config 的支持情况。  
 ### 启动步骤
- 要求：电脑预装 docker。
+
  1. 在 docker 中启动 mysql 数据库, 在项目根目录下执行
  ```
 docker-compose up -d

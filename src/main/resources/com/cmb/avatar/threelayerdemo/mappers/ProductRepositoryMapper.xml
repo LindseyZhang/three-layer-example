@@ -1,0 +1,15 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cmb.avatar.threelayerdemo.mappers.ProductRepositoryMapper">
+
+    <select id="findByName" parameterType="map" resultType="Product">
+        <bind name="pattern" value="'%' + name + '%'" />
+        select * from product where name like #{pattern}
+    </select>
+
+    <insert id="addProduct" parameterType="map">
+        insert into product (`name`, price) values (#{name}, #{price})
+    </insert>
+</mapper>

@@ -1,11 +1,11 @@
-package com.cmb.avatar.threelayerdemo.controller.response;
+package com.cmb.avatar.threelayerdemo.repository.model;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class ProductResponse {
+public class Product {
     private String id;
     private String name;
     private float price;

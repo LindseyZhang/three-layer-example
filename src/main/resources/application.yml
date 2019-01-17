@@ -3,4 +3,8 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/three_layer_demo
     username: root
     password: password
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:com/cmb/avatar/threelayerdemo/mappers/*.xml
+  type-aliases-package: com.cmb.avatar.threelayerdemo.repository.model
