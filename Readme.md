@@ -53,4 +53,6 @@ gradlew.bat bootRun
 gradlew.bat clean build
 ```
  
- 
+### Swagger API
+服务启动后，通过访问 http://localhost:8080/swagger-ui.html
+查看。 
